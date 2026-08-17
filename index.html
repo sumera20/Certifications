@@ -24,8 +24,6 @@
             line-height: 1.6;
         }
 
-        /* HERO */
-
         header {
             background: linear-gradient(135deg, #111827, #1f2937);
             color: white;
@@ -61,8 +59,6 @@
             color: #111827;
         }
 
-        /* MAIN */
-
         .container {
             max-width: 1150px;
             margin: 55px auto;
@@ -84,8 +80,6 @@
             color: #6b7280;
             font-size: 17px;
         }
-
-        /* STATS */
 
         .stats {
             display: flex;
@@ -115,8 +109,6 @@
             font-size: 14px;
         }
 
-        /* CATEGORY */
-
         .category {
             margin-bottom: 65px;
         }
@@ -137,8 +129,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 22px;
         }
-
-        /* CARDS */
 
         .card {
             background: white;
@@ -181,8 +171,6 @@
             flex-grow: 1;
         }
 
-        /* BUTTON */
-
         .button {
             display: inline-block;
             background: #111827;
@@ -199,7 +187,15 @@
             background: #374151;
         }
 
-        /* FOOTER */
+        .coming-soon {
+            display: inline-block;
+            background: #e5e7eb;
+            color: #6b7280;
+            padding: 10px 15px;
+            border-radius: 7px;
+            font-size: 14px;
+            text-align: center;
+        }
 
         footer {
             background: #111827;
@@ -214,10 +210,7 @@
             text-decoration: none;
         }
 
-        /* MOBILE */
-
         @media (max-width: 600px) {
-
             header {
                 padding: 60px 20px;
             }
@@ -245,13 +238,7 @@
     </style>
 </head>
 
-
 <body>
-
-
-<!-- ========================================================= -->
-<!-- HERO -->
-<!-- ========================================================= -->
 
 <header>
 
@@ -264,7 +251,8 @@
     <a
         class="github-link"
         href="https://github.com/sumera20"
-        target="_blank">
+        target="_blank"
+        rel="noopener noreferrer">
         View My GitHub
     </a>
 
@@ -272,11 +260,6 @@
 
 
 <div class="container">
-
-
-    <!-- ========================================================= -->
-    <!-- INTRO -->
-    <!-- ========================================================= -->
 
     <div class="intro">
 
@@ -291,15 +274,11 @@
     </div>
 
 
-    <!-- ========================================================= -->
-    <!-- STATS -->
-    <!-- ========================================================= -->
-
     <div class="stats">
 
         <div class="stat">
-            <div class="stat-number">21</div>
-            <div class="stat-label">Learning Credentials</div>
+            <div class="stat-number">12</div>
+            <div class="stat-label">Credentials Available</div>
         </div>
 
         <div class="stat">
@@ -316,7 +295,7 @@
 
 
     <!-- ========================================================= -->
-    <!-- 1. PROFESSIONAL CERTIFICATIONS -->
+    <!-- PROFESSIONAL CERTIFICATIONS -->
     <!-- ========================================================= -->
 
     <section class="category">
@@ -326,8 +305,8 @@
         </h2>
 
         <p class="category-description">
-            Formal certifications covering cloud computing,
-            cybersecurity and agile methodologies.
+            Formal certifications and professional training in
+            technology, cloud computing and agile methodologies.
         </p>
 
         <div class="certificates">
@@ -335,52 +314,26 @@
 
             <div class="card">
 
-                <div class="icon">☁️</div>
+                <div class="icon">🔄</div>
 
                 <h3>
-                    AWS Academy Cloud Architecting
+                    SCRUM Certificate
                 </h3>
 
                 <p class="issuer">
-                    Amazon Web Services (AWS Academy / Credly)
+                    Scrum Organization
                 </p>
 
                 <p class="description">
-                    Cloud architecture concepts and AWS
-                    cloud infrastructure.
+                    Training related to Scrum principles,
+                    agile methodologies and project management.
                 </p>
 
                 <a
                     class="button"
-                    href="aws-cloud-architecting.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icon">☁️</div>
-
-                <h3>
-                    AWS Academy Cloud Foundations
-                </h3>
-
-                <p class="issuer">
-                    Amazon Web Services (AWS Academy / Credly)
-                </p>
-
-                <p class="description">
-                    Fundamental concepts of cloud computing
-                    and AWS services.
-                </p>
-
-                <a
-                    class="button"
-                    href="aws-cloud-foundations.pdf"
-                    target="_blank">
+                    href="SCRUM%20certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -404,39 +357,57 @@
                     risks and security practices.
                 </p>
 
-                <a
-                    class="button"
-                    href="foundations-cybersecurity.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
 
             <div class="card">
 
-                <div class="icon">🔄</div>
+                <div class="icon">☁️</div>
 
                 <h3>
-                    SCRUM Certificate
+                    AWS Academy Cloud Architecting
                 </h3>
 
                 <p class="issuer">
-                    Scrum Organization
+                    Amazon Web Services (AWS Academy / Credly)
                 </p>
 
                 <p class="description">
-                    Training related to Scrum principles,
-                    agile methodologies and project management.
+                    Cloud architecture concepts and AWS
+                    cloud infrastructure.
                 </p>
 
-              <a
-    class="button"
-    href="SCRUM%20Certificate.pdf"
-    target="_blank">
-    View Certificate →
-</a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">☁️</div>
+
+                <h3>
+                    AWS Academy Cloud Foundations
+                </h3>
+
+                <p class="issuer">
+                    Amazon Web Services (AWS Academy / Credly)
+                </p>
+
+                <p class="description">
+                    Fundamental concepts of cloud computing
+                    and AWS services.
+                </p>
+
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
@@ -446,7 +417,7 @@
 
 
     <!-- ========================================================= -->
-    <!-- 2. DATA & VIRTUAL EXPERIENCE -->
+    <!-- DATA -->
     <!-- ========================================================= -->
 
     <section class="category">
@@ -483,7 +454,8 @@
                 <a
                     class="button"
                     href="Sumera_Data%20analytics_Certificate_DigiSkills.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -511,7 +483,8 @@
                 <a
                     class="button"
                     href="Sumera_Data_Science_Certificate_Forage.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Experience →
                 </a>
 
@@ -539,39 +512,13 @@
                 <a
                     class="button"
                     href="TATA.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Experience →
                 </a>
 
             </div>
 
-
-            <div class="card">
-
-                <div class="icon">📐</div>
-
-                <h3>
-                    Simple Linear Regression for the
-                    Absolute Beginner
-                </h3>
-
-                <p class="issuer">
-                    Coursera Project Network
-                </p>
-
-                <p class="description">
-                    Practical introduction to simple linear
-                    regression and statistical analysis.
-                </p>
-
-                <a
-                    class="button"
-                    href="simple-linear-regression.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
 
         </div>
 
@@ -579,13 +526,13 @@
 
 
     <!-- ========================================================= -->
-    <!-- 3. TECHNOLOGY & PROGRAMMING -->
+    <!-- TECHNOLOGY -->
     <!-- ========================================================= -->
 
     <section class="category">
 
         <h2 class="category-title">
-            💻 Technology & Programming Training
+            💻 Technology & Programming
         </h2>
 
         <p class="category-description">
@@ -594,33 +541,6 @@
         </p>
 
         <div class="certificates">
-
-
-            <div class="card">
-
-                <div class="icon">🐍</div>
-
-                <h3>
-                    Get Started with Python
-                </h3>
-
-                <p class="issuer">
-                    Google via Coursera
-                </p>
-
-                <p class="description">
-                    Introduction to Python programming,
-                    programming concepts and practical skills.
-                </p>
-
-                <a
-                    class="button"
-                    href="get-started-python.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
 
 
             <div class="card">
@@ -643,11 +563,37 @@
                 <a
                     class="button"
                     href="Python%20for%20Data%20Science%20Al%20and%20Dev.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
             </div>
+
+
+            <div class="card">
+
+                <div class="icon">🐍</div>
+
+                <h3>
+                    Get Started with Python
+                </h3>
+
+                <p class="issuer">
+                    Google via Coursera
+                </p>
+
+                <p class="description">
+                    Introduction to Python programming,
+                    programming concepts and practical skills.
+                </p>
+
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
+
+            </div>
+
 
         </div>
 
@@ -655,7 +601,7 @@
 
 
     <!-- ========================================================= -->
-    <!-- 4. CLIMATE & SUSTAINABILITY -->
+    <!-- CLIMATE -->
     <!-- ========================================================= -->
 
     <section class="category">
@@ -692,7 +638,8 @@
                 <a
                     class="button"
                     href="Sustainable%20food%20system%20Illionois.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -720,8 +667,9 @@
                 <a
                     class="button"
                     href="Environmental%20MMBL.png"
-                    target="_blank">
-                    View Workshop Certificate →
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Certificate →
                 </a>
 
             </div>
@@ -747,7 +695,8 @@
                 <a
                     class="button"
                     href="NYCCC.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -774,7 +723,8 @@
                 <a
                     class="button"
                     href="COP%20UNICEF.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -786,7 +736,7 @@
 
 
     <!-- ========================================================= -->
-    <!-- 5. EMERGENCY & RESILIENCE -->
+    <!-- EMERGENCY -->
     <!-- ========================================================= -->
 
     <section class="category">
@@ -823,7 +773,8 @@
                 <a
                     class="button"
                     href="DRM%20AKAH.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -850,7 +801,8 @@
                 <a
                     class="button"
                     href="ICS-100.pdf"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -876,8 +828,9 @@
 
                 <a
                     class="button"
-                    href="unicef-emergency-preparedness.pdf"
-                    target="_blank">
+                    href="UNICEF.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View Certificate →
                 </a>
 
@@ -901,12 +854,9 @@
                     through skills and learning.
                 </p>
 
-                <a
-                    class="button"
-                    href="building-resilience-youth.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
@@ -916,7 +866,7 @@
 
 
     <!-- ========================================================= -->
-    <!-- 6. PROFESSIONAL DEVELOPMENT -->
+    <!-- PROFESSIONAL DEVELOPMENT -->
     <!-- ========================================================= -->
 
     <section class="category">
@@ -950,12 +900,9 @@
                     online business skills.
                 </p>
 
-                <a
-                    class="button"
-                    href="digital-marketing-google.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
@@ -977,12 +924,9 @@
                     professional development.
                 </p>
 
-                <a
-                    class="button"
-                    href="digital-girls-entrepreneurship.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
@@ -1004,12 +948,9 @@
                     skills for career development.
                 </p>
 
-                <a
-                    class="button"
-                    href="english-career-development.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
+                <span class="coming-soon">
+                    Certificate Coming Soon
+                </span>
 
             </div>
 
@@ -1019,45 +960,38 @@
 
 
     <!-- ========================================================= -->
-    <!-- 7. AWARDS -->
+    <!-- FUTURE / PROJECTS -->
     <!-- ========================================================= -->
 
     <section class="category">
 
         <h2 class="category-title">
-            🏆 Awards & Recognition
+            💻 Projects
         </h2>
 
         <p class="category-description">
-            Academic, creative and extracurricular recognition.
+            Projects and practical work will be added here
+            as the portfolio grows.
         </p>
 
         <div class="certificates">
 
-
             <div class="card">
 
-                <div class="icon">🎨</div>
+                <div class="icon">🚀</div>
 
                 <h3>
-                    Certificate of Merit — Best Artist, Iqbal Day
+                    Projects Coming Soon
                 </h3>
 
-                <p class="issuer">
-                    Punjab Group of Colleges
-                </p>
-
                 <p class="description">
-                    Recognition for artistic achievement
-                    during Iqbal Day.
+                    This section is reserved for data science,
+                    AI, web development and analytics projects.
                 </p>
 
-                <a
-                    class="button"
-                    href="best-artist-iqbal-day.pdf"
-                    target="_blank">
-                    View Award →
-                </a>
+                <span class="coming-soon">
+                    Coming Soon
+                </span>
 
             </div>
 
@@ -1069,10 +1003,6 @@
 </div>
 
 
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- ========================================================= -->
-
 <footer>
 
     <p>
@@ -1082,13 +1012,13 @@
     <p style="margin-top: 8px;">
         <a
             href="https://github.com/sumera20"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             GitHub
         </a>
     </p>
 
 </footer>
-
 
 </body>
 </html>
