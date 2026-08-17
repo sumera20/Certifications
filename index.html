@@ -13,6 +13,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f7f8fa;
@@ -37,7 +41,7 @@
         header p {
             font-size: 20px;
             color: #d1d5db;
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
         }
 
@@ -49,6 +53,7 @@
             border-radius: 8px;
             color: white;
             text-decoration: none;
+            transition: 0.2s;
         }
 
         .github-link:hover {
@@ -66,7 +71,7 @@
 
         .intro {
             text-align: center;
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto 60px;
         }
 
@@ -80,10 +85,40 @@
             font-size: 17px;
         }
 
+        /* STATS */
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 35px auto 60px;
+        }
+
+        .stat {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px 35px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
         /* CATEGORY */
 
         .category {
-            margin-bottom: 55px;
+            margin-bottom: 60px;
         }
 
         .category-title {
@@ -108,6 +143,8 @@
             padding: 26px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -136,7 +173,8 @@
         .description {
             color: #6b7280;
             font-size: 14px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
         /* BUTTON */
@@ -146,9 +184,10 @@
             background: #111827;
             color: white;
             text-decoration: none;
-            padding: 9px 14px;
+            padding: 10px 15px;
             border-radius: 7px;
             font-size: 14px;
+            text-align: center;
             transition: 0.2s;
         }
 
@@ -194,6 +233,10 @@
             .category-title {
                 font-size: 23px;
             }
+
+            .stat {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -233,109 +276,48 @@
 
         <p>
             A collection of certifications, professional training,
-            virtual experiences, workshops and achievements across
-            cloud computing, data science, cybersecurity,
-            sustainability and professional development.
+            virtual experiences and workshops across data science,
+            technology, sustainability, emergency management
+            and professional development.
         </p>
 
     </div>
 
 
+    <!-- ================= STATS ================= -->
 
-    <!-- ================= CLOUD & TECHNOLOGY ================= -->
+    <div class="stats">
+
+        <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Certificates</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Areas</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">2024–26</div>
+            <div class="stat-label">Learning Journey</div>
+        </div>
+
+    </div>
+
+
+    <!-- ================= DATA & TECHNOLOGY ================= -->
 
     <section class="category">
 
         <h2 class="category-title">
-            ☁️ Cloud & Technology
+            📊 Data, AI & Technology
         </h2>
 
         <div class="certificates">
 
 
-            <div class="card">
-
-                <div class="icon">☁️</div>
-
-                <h3>
-                    AWS Academy Cloud Architecting
-                </h3>
-
-                <p class="issuer">
-                    Amazon Web Services (AWS Academy / Credly)
-                </p>
-
-                <p class="description">
-                    Training in cloud architecture and AWS
-                    cloud infrastructure concepts.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/aws-cloud-architecting.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="icon">☁️</div>
-
-                <h3>
-                    AWS Academy Cloud Foundations
-                </h3>
-
-                <p class="issuer">
-                    Amazon Web Services (AWS Academy / Credly)
-                </p>
-
-                <p class="description">
-                    Fundamentals of cloud computing and
-                    AWS services.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/aws-cloud-foundations.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="icon">🐍</div>
-
-                <h3>
-                    Get Started with Python
-                </h3>
-
-                <p class="issuer">
-                    Google via Coursera
-                </p>
-
-                <p class="description">
-                    Introduction to Python programming concepts
-                    and practical programming skills.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/get-started-python.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
+            <!-- IBM PYTHON -->
 
             <div class="card">
 
@@ -351,12 +333,12 @@
 
                 <p class="description">
                     Python programming applied to data science,
-                    AI and development.
+                    artificial intelligence and development.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/ibm-python-data-science.pdf"
+                    href="Python%20for%20Data%20Science%20Al%20and%20Dev.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -364,105 +346,7 @@
             </div>
 
 
-
-            <div class="card">
-
-                <div class="icon">🔐</div>
-
-                <h3>
-                    Foundations of Cybersecurity
-                </h3>
-
-                <p class="issuer">
-                    Google via Coursera
-                </p>
-
-                <p class="description">
-                    Fundamentals of cybersecurity concepts,
-                    risks and security practices.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/foundations-cybersecurity.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="icon">🔄</div>
-
-                <h3>
-                    SCRUM Certificate
-                </h3>
-
-                <p class="issuer">
-                    Scrum Organization
-                </p>
-
-                <p class="description">
-                    Training and certification related to
-                    Scrum and agile project management.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/scrum.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
-
-            <div class="card">
-
-                <div class="icon">🚨</div>
-
-                <h3>
-                    Incident Command System Level 100 (ICS100)
-                </h3>
-
-                <p class="issuer">
-                    Justice Institute of British Columbia (JIBC)
-                </p>
-
-                <p class="description">
-                    Introduction to incident command systems
-                    and emergency management structures.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/ics100.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= DATA ================= -->
-
-    <section class="category">
-
-        <h2 class="category-title">
-            📊 Data, Analytics & Business
-        </h2>
-
-        <div class="certificates">
-
+            <!-- DATA ANALYTICS -->
 
             <div class="card">
 
@@ -477,13 +361,13 @@
                 </p>
 
                 <p class="description">
-                    Data analytics, business intelligence and
-                    data-driven decision making.
+                    Training in data analytics, business
+                    intelligence and data-driven decision making.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/data-analytics-bi.pdf"
+                    href="Sumera_Data%20analytics_Certificate_DigiSkills.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -491,6 +375,7 @@
             </div>
 
 
+            <!-- FORAGE DATA SCIENCE -->
 
             <div class="card">
 
@@ -505,13 +390,13 @@
                 </p>
 
                 <p class="description">
-                    Practical virtual experience focused on
+                    Practical virtual experience involving
                     data science tasks and analysis.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/data-science-forage.pdf"
+                    href="Sumera_Data_Science_Certificate_Forage.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -519,6 +404,7 @@
             </div>
 
 
+            <!-- TATA -->
 
             <div class="card">
 
@@ -534,52 +420,23 @@
                 </p>
 
                 <p class="description">
-                    Data visualization and communicating
-                    business insights effectively.
+                    Practical experience in data visualization
+                    and communicating business insights.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/tata-data-visualisation.pdf"
+                    href="TATA.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
 
             </div>
 
-
-
-            <div class="card">
-
-                <div class="icon">📐</div>
-
-                <h3>
-                    Simple Linear Regression for the
-                    Absolute Beginner
-                </h3>
-
-                <p class="issuer">
-                    Coursera Project Network
-                </p>
-
-                <p class="description">
-                    Introduction to simple linear regression
-                    and practical statistical analysis.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/simple-linear-regression.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
 
         </div>
 
     </section>
-
 
 
     <!-- ================= SUSTAINABILITY ================= -->
@@ -592,6 +449,8 @@
 
         <div class="certificates">
 
+
+            <!-- SUSTAINABLE FOOD -->
 
             <div class="card">
 
@@ -607,13 +466,13 @@
                 </p>
 
                 <p class="description">
-                    Sustainable food systems and environmental
-                    sustainability concepts.
+                    Learning about sustainable food systems
+                    and environmental sustainability.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/sustainable-food-systems.pdf"
+                    href="Sustainable%20food%20system%20Illionois.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -621,6 +480,7 @@
             </div>
 
 
+            <!-- ESG -->
 
             <div class="card">
 
@@ -636,13 +496,13 @@
                 </p>
 
                 <p class="description">
-                    Introduction to ESG principles and
-                    sustainability policy.
+                    Workshop covering ESG principles,
+                    sustainability and responsible business.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/esg-policy-workshop.pdf"
+                    href="Environmental%20MMBL.png"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -650,10 +510,40 @@
             </div>
 
 
+            <!-- NYCCC -->
 
             <div class="card">
 
                 <div class="icon">🌎</div>
+
+                <h3>
+                    Climate & Sustainability Training
+                </h3>
+
+                <p class="issuer">
+                    NYCCC
+                </p>
+
+                <p class="description">
+                    Training related to climate change,
+                    sustainability and environmental awareness.
+                </p>
+
+                <a
+                    class="button"
+                    href="NYCCC.pdf"
+                    target="_blank">
+                    View Certificate →
+                </a>
+
+            </div>
+
+
+            <!-- COP -->
+
+            <div class="card">
+
+                <div class="icon">🌍</div>
 
                 <h3>
                     COP in My City 2024
@@ -670,17 +560,17 @@
 
                 <a
                     class="button"
-                    href="certificates/cop-in-my-city-2024.pdf"
+                    href="COP%20UNICEF.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
 
             </div>
 
+
         </div>
 
     </section>
-
 
 
     <!-- ================= EMERGENCY ================= -->
@@ -693,6 +583,8 @@
 
         <div class="certificates">
 
+
+            <!-- DRM -->
 
             <div class="card">
 
@@ -714,7 +606,7 @@
 
                 <a
                     class="button"
-                    href="certificates/disaster-response-cert.pdf"
+                    href="DRM%20AKAH.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
@@ -722,65 +614,39 @@
             </div>
 
 
+            <!-- ICS -->
 
             <div class="card">
 
                 <div class="icon">🆘</div>
 
                 <h3>
-                    Emergency Preparedness and Response
+                    Incident Command System Level 100 (ICS100)
                 </h3>
 
                 <p class="issuer">
-                    UNICEF
+                    Justice Institute of British Columbia
+                    (JIBC)
                 </p>
 
                 <p class="description">
-                    Emergency preparedness and response
-                    fundamentals.
+                    Introduction to incident command systems
+                    and emergency management structures.
                 </p>
 
                 <a
                     class="button"
-                    href="certificates/unicef-emergency-preparedness.pdf"
+                    href="ICS-100.pdf"
                     target="_blank">
                     View Certificate →
                 </a>
 
             </div>
 
-
-
-            <div class="card">
-
-                <div class="icon">💪</div>
-
-                <h3>
-                    Building Resilience in Youth Through Skills
-                </h3>
-
-                <p class="issuer">
-                    Global UGRAD Pakistan
-                </p>
-
-                <p class="description">
-                    Youth development and resilience-building
-                    through skills and learning.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/building-resilience-youth.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
 
         </div>
 
     </section>
-
 
 
     <!-- ================= PROFESSIONAL ================= -->
@@ -788,144 +654,41 @@
     <section class="category">
 
         <h2 class="category-title">
-            💼 Professional Development & Entrepreneurship
+            💼 Professional Development
         </h2>
 
         <div class="certificates">
 
 
-            <div class="card">
-
-                <div class="icon">📱</div>
-
-                <h3>
-                    Digital Marketing Certification
-                </h3>
-
-                <p class="issuer">
-                    Google Digital Garage
-                </p>
-
-                <p class="description">
-                    Digital marketing fundamentals and
-                    online business skills.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/digital-marketing-google.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-
+            <!-- PLACEHOLDER -->
 
             <div class="card">
 
-                <div class="icon">👩‍💻</div>
+                <div class="icon">📚</div>
 
                 <h3>
-                    Digital Girls Entrepreneurship Program
+                    More Certifications Coming Soon
                 </h3>
 
                 <p class="issuer">
-                    Pin92 · Kingdom Valley · P@SHA/PSEB
+                    Professional Development
                 </p>
 
                 <p class="description">
-                    Entrepreneurship, digital skills and
-                    professional development.
+                    Additional certifications in cloud,
+                    cybersecurity, programming and
+                    professional development will be added.
                 </p>
-
-                <a
-                    class="button"
-                    href="certificates/digital-girls-entrepreneurship.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
 
             </div>
 
-
-
-            <div class="card">
-
-                <div class="icon">🇺🇸</div>
-
-                <h3>
-                    English for Career Development
-                </h3>
-
-                <p class="issuer">
-                    University of Pennsylvania via Coursera
-                </p>
-
-                <p class="description">
-                    Professional English and communication
-                    skills for career development.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/english-career-development.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
 
         </div>
 
     </section>
 
-
-
-    <!-- ================= ACHIEVEMENTS ================= -->
-
-    <section class="category">
-
-        <h2 class="category-title">
-            🏆 Achievements & Recognition
-        </h2>
-
-        <div class="certificates">
-
-
-            <div class="card">
-
-                <div class="icon">🎨</div>
-
-                <h3>
-                    Certificate of Merit — Best Artist,
-                    Iqbal Day
-                </h3>
-
-                <p class="issuer">
-                    Punjab Group of Colleges
-                </p>
-
-                <p class="description">
-                    Recognition for artistic achievement
-                    during Iqbal Day.
-                </p>
-
-                <a
-                    class="button"
-                    href="certificates/best-artist-iqbal-day.pdf"
-                    target="_blank">
-                    View Certificate →
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
 
 </div>
-
 
 
 <!-- ================= FOOTER ================= -->
